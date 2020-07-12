@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Beats</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+
+    var picPaths = ['images/img1.jpg', 'images/img2.jpg', 'images/img3.jpg', 'images/img4.jpg', 'images/img5.jpg', 'images/img6.jpg', 'images/img7.jpg', 'images/img8.jpg', 'images/img9.jpg', 'images/img10.jpg', 'images/img11.jpg',
+      'images/img12.jpg'
+    ];
+
+    function swapImage() {
+      var randomNum = Math.floor(Math.random() * picPaths.length);
+
+      var text = document.getElementById('input1').value;
+
+      imgCont.src = picPaths[randomNum];
+      setTimeout(swapImage, (60 / text) * 1000);
+    }
+
+    window.onload = function() {
+      imgCont = document.getElementById('imgBanner');
+    }
+  </script>
+</head>
+
+<body>
+  <div class="image">
+    <img id="imgBanner" src="images/img1.jpg" alt="" />
+  </div>
+  <input type="text" id="input1" value="Enter your choice of BPM" />
+  <button onclick="swapImage()">Save</button>
+
+</body>
+
+</html>
