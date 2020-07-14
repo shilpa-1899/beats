@@ -1,4 +1,20 @@
 body{
-  padding-left: 550px;
+  background-image: url('Guitars.jpg');
+  background-repeat:no-repeat;
+
+}
+h1{
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 60px;
+}
+.input{
+  padding-left: 300px;
+
+
+}
+.image{
+  padding-left: 300px;
   padding-top:150px;
 }
